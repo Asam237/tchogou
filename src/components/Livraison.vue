@@ -15,16 +15,20 @@
             <ul
               v-for="myItem in items"
               v-bind:key="myItem.icon"
-              class="bg-white shadow-xl flex items-center p-2"
+              class="bg-white shadow-xl flex items-center p-1"
             >
               <i
                 :class="`${myItem.icon} text-gray-800
               hover:text-gray-400
+              rounded-full
               `"
                 aria-hidden="true"
               ></i>
               <div class="site__livraison-block">
-                <p class="text-sm" style="font-family: 'Yaldevi', sans-serif">
+                <p
+                  class="text-xs font-extrabold"
+                  style="font-family: 'Yaldevi', sans-serif"
+                >
                   {{ myItem.title }}
                 </p>
                 <p
@@ -33,7 +37,12 @@
                 >
                   {{ myItem.content }}
                 </p>
-                <button>{{ myItem.btn }}</button>
+                <button
+                  class="text-xs font-extrabold"
+                  style="font-family: 'Yaldevi', sans-serif"
+                >
+                  {{ myItem.btn }}
+                </button>
               </div>
             </ul>
           </div>
@@ -51,29 +60,29 @@ export default {
     return {
       items: [
         {
-          icon: "fa fa-twitter",
+          icon: "fa fa-truck",
           title: "Livraison rapide ",
           content: "Entre 1 et 4jours",
           btn: "Mes commandes",
         },
         {
-          icon: "",
+          icon: "fa fa-money",
           title: "Plusieurs Moyens de paiement ",
           content: "Cash à la livraison/Mobile Money",
           btn: "Voir mon panier",
         },
         {
-          icon: "",
+          icon: "fa fa-calendar",
           title: "Retour sous 10 jours rapide ",
           content: "Si le produit a un problème",
           btn: "Service client",
         },
-        {
-          icon: "",
-          title: "Service client de qualité",
-          content: "Disponible à 100% ",
-          btn: "Vendre sur VSS",
-        },
+        // {
+        //   icon: "",
+        //   title: "Service client de qualité",
+        //   content: "Disponible à 100% ",
+        //   btn: "Vendre sur VSS",
+        // },
       ],
     };
   },

@@ -16,7 +16,7 @@
       v-bind:key="dts.id"
       class="site__product-item shadow-2xl p-4"
     >
-      <div v-if="myAPI === '[]'">
+      <div>
         <img
           class="w-full bg-cover h-52"
           :src="dts.produits[0]['medias'][0].link"
@@ -33,11 +33,11 @@
           </p>
         </div>
       </div>
-      <div v-else>
+      <!-- <div v-else>
         <div class="flex justify-center py-10 items-center">
           <img class="w-10 h-10 bg-cover" :src="loadingPic" alt="" />
         </div>
-      </div>
+      </div> -->
       <!-- <div>{{ dts.produits[key].name }}</div>
       <div>{{ dts.produits[key].name }}</div> -->
       <div class="site__product-title">

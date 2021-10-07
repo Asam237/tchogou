@@ -1,5 +1,6 @@
 <template>
   <p>Template here !</p>
+  <p>hello</p>
 </template>
 
 <script>

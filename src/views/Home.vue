@@ -5,6 +5,7 @@
     <MyCarousel />
     <Offre />
     <Decouvrir />
+    <Livraison />
     <WhatVSS />
     <Footer />
   </div>
@@ -19,6 +20,7 @@ import WhatVSS from "../components/WhatVSS.vue";
 import MyCarousel from "../components/Carousel.vue";
 import Decouvrir from "../components/Decouvrir.vue";
 import Offre from "../components/Offre.vue";
+import Livraison from "../components/Livraison.vue";
 import Footer from "../components/Footer.vue";
 
 export default {
@@ -29,6 +31,7 @@ export default {
     Header,
     MyCarousel,
     Decouvrir,
+    Livraison,
     WhatVSS,
     Offre,
     Footer,

@@ -1,5 +1,5 @@
 <template>
-  <div class="site__livraison bg-green-800 py-4 my-4 px-2 md:px-0">
+  <div class="site__livraison bg-green-800 py-10 my-8 px-2 md:px-0">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row">
         <div class="site__livraison-items w-full md:w-3/5">
@@ -18,13 +18,13 @@
               class="bg-white shadow-xl flex items-center p-1"
             >
               <i
-                :class="`${myItem.icon} text-gray-800
+                :class="`${myItem.icon} fa-lg mr-2 text-green-800
               hover:text-gray-400
               rounded-full
               `"
                 aria-hidden="true"
               ></i>
-              <div class="site__livraison-block">
+              <div class="site__livraison-block w-full">
                 <p
                   class="text-xs font-extrabold"
                   style="font-family: 'Yaldevi', sans-serif"
@@ -38,7 +38,15 @@
                   {{ myItem.content }}
                 </p>
                 <button
-                  class="text-xs font-extrabold"
+                  class="
+                    text-xs
+                    bg-green-700
+                    mt-2
+                    text-white
+                    w-full
+                    p-1
+                    rounded-sm
+                  "
                   style="font-family: 'Yaldevi', sans-serif"
                 >
                   {{ myItem.btn }}
@@ -47,7 +55,38 @@
             </ul>
           </div>
         </div>
-        <div class="site__livraison-sign w-full md:w-2/5">B</div>
+        <div
+          class="
+            site__livraison-sign
+            w-full
+            flex
+            md:justify-center
+            justify-start
+            items-center
+            md:w-2/5
+          "
+        >
+          <div class="flex flex-col w-full mt-4 md:mt-0 md:w-3/6">
+            <u v-for="item in signs" v-bind:key="item.id">
+              <button
+                style="font-family: 'Yaldevi', sans-serif"
+                class="
+                  text-black
+                  my-1
+                  uppercase
+                  text-xs
+                  shadow-2xl
+                  rounded-sm
+                  p-1
+                  bg-white
+                  w-full
+                "
+              >
+                {{ item.name }}
+              </button>
+            </u>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -67,22 +106,26 @@ export default {
         },
         {
           icon: "fa fa-money",
-          title: "Plusieurs Moyens de paiement ",
-          content: "Cash à la livraison/Mobile Money",
-          btn: "Voir mon panier",
+          title: "Service client de qualité",
+          content: "Disponible à 100% ",
+          btn: "Vendre sur VSS",
         },
+        // {
+        //   icon: "fa fa-money",
+        //   title: "Plusieurs Moyens de paiement ",
+        //   content: "Cash à la livraison/Mobile Money",
+        //   btn: "Voir mon panier",
+        // },
         {
           icon: "fa fa-calendar",
           title: "Retour sous 10 jours rapide ",
           content: "Si le produit a un problème",
           btn: "Service client",
         },
-        // {
-        //   icon: "",
-        //   title: "Service client de qualité",
-        //   content: "Disponible à 100% ",
-        //   btn: "Vendre sur VSS",
-        // },
+      ],
+      signs: [
+        { id: 0, name: "inscription" },
+        { id: 1, name: "connexion" },
       ],
     };
   },

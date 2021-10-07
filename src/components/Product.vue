@@ -12,7 +12,7 @@
     "
   >
     <ul
-      v-for="(dts, key, index) in myAPI"
+      v-for="dts in myAPI"
       v-bind:key="dts.id"
       class="site__product-item shadow-2xl p-4"
     >

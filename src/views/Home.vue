@@ -5,8 +5,8 @@
     <MyCarousel />
     <Offre />
     <Decouvrir />
-    <Livraison />
     <WhatVSS />
+    <Livraison />
     <Footer />
   </div>
 </template>

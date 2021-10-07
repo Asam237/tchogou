@@ -1,5 +1,6 @@
 <template>
   <div
+    id="produits"
     class="
       py-5
       md:py-10

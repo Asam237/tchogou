@@ -7,6 +7,7 @@
     <Decouvrir />
     <WhatVSS />
     <Livraison />
+    <CreateShop />
     <Footer />
   </div>
 </template>
@@ -22,6 +23,7 @@ import Decouvrir from "../components/Decouvrir.vue";
 import Offre from "../components/Offre.vue";
 import Livraison from "../components/Livraison.vue";
 import Footer from "../components/Footer.vue";
+import CreateShop from "../components/CreateShop.vue";
 
 export default {
   name: "Home",
@@ -35,6 +37,7 @@ export default {
     WhatVSS,
     Offre,
     Footer,
+    CreateShop,
   },
   data() {
     return {

@@ -143,11 +143,11 @@ export default {
         { id: 2, link: "/creation", text: "shop" },
         { id: 3, link: "/creation", text: "nos vendeurs" },
         { id: 4, link: "/creation", text: "blog" },
-        { id: 5, link: "/creation", text: "produit" },
+        { id: 5, link: "#produits", text: "produit" },
       ],
       mainTwo: [
         { id: 1, link: "", text: "a propos" },
-        { id: 2, link: "/creation", text: "creer une boutique" },
+        { id: 2, link: "#createshop", text: "creer une boutique" },
       ],
     };
   },

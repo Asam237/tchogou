@@ -1,5 +1,5 @@
 <template>
-  <div class="site__shop py-4 md:py-10" id="createshop">
+  <div data-aos="fade-left" class="site__shop py-4 md:py-10" id="createshop">
     <div class="container mx-auto">
       <h1
         class="font-extrabold text-gray-800 text-center text-xl"

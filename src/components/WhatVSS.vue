@@ -5,9 +5,11 @@
         <img
           src="../assets/imgs/wvss.jpg"
           alt=""
+          data-aos="fade-left"
           class="site__whats-vss-img hidden md:flex md:w-1/2"
         />
         <div
+          data-aos="fade-right"
           class="
             site__whats-vss-block
             flex flex-col

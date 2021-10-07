@@ -3,6 +3,7 @@
     <div class="container mx-auto">
       <div class="flex flex-col pb-4 md:flex-row">
         <div
+          data-aos="fade-left"
           class="
             site__decouvrir-phones
             hidden
@@ -28,7 +29,10 @@
             <p>a</p>
           </div>
         </div>
-        <div class="site__decouvrir-product w-full md:w-3/4">
+        <div
+          data-aos="fade-right"
+          class="site__decouvrir-product w-full md:w-3/4"
+        >
           <div
             class="
               site__decouvrir-header

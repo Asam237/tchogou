@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@dcasia/vue-aos": "^1.0.2",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9",
     "axios": "^0.22.0",
@@ -14,7 +15,6 @@
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
-    "vue-aos": "^2.1.0",
     "vue-carousel": "^0.18.0",
     "vue-router": "^4.0.0-0",
     "vue3-carousel": "^0.1.27"

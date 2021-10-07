@@ -1,6 +1,6 @@
 <template>
   <div class="site__offre">
-    <div class="hidden md:flex py-2 my-4 bg-gray-800">
+    <div class="hidden md:flex py-5 md:py-10 my-4 bg-gray-800">
       <div class="container mx-auto">
         <div class="flex justify-between items-center">
           <h4

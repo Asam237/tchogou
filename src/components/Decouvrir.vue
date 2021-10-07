@@ -1,5 +1,5 @@
 <template>
-  <div class="site__decouvrir py-4">
+  <div class="site__decouvrir py-5 md:py-10">
     <div class="container mx-auto">
       <div class="flex flex-col pb-4 md:flex-row">
         <div
@@ -41,19 +41,18 @@
             <h1
               class="
                 text-xl text-gray-800
-                md:text-xl
-                uppercase
                 font-extrabold
                 md:border-b-2 md:border-red-700
                 text-center
                 cursor-pointer
                 px-2
                 md:px-0
+                md:uppercase
               "
               style="font-family: 'Yaldevi', sans-serif"
               @click="changeProduct"
             >
-              A DÉCOUVRIR SUR Vetchi Smart Stock
+              A decouvrir sur Vetchi Smart Stock
             </h1>
             <h1
               class="

@@ -1,5 +1,5 @@
 <template>
-  <div class="site__whats-vss py-4 px-2 md:px-0">
+  <div class="site__whats-vss py-4 md:py-10 px-2 md:px-0">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row">
         <img

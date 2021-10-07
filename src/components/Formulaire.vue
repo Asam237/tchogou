@@ -1,5 +1,5 @@
 <template>
-  <div class="site__sign-formulaire px-2 md:px-0 py-8">
+  <div class="site__sign-formulaire px-2 md:px-0 py-5 md:py-10">
     <div class="container mx-auto flex flex-col md:flex-row">
       <div v-show="value === 'A'" class="login w-full md:w-1/2">
         <h4

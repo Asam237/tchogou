@@ -7,7 +7,7 @@
           justify-center
           px-2
           md:px-0
-          py-3
+          py-4
           flex
           items-center
           md:justify-around

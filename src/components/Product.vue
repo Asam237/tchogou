@@ -1,12 +1,12 @@
 <template>
   <div
     class="
-      py-4
+      py-5
+      md:py-10
       site__product
       md:grid
       md:gap-4
-      grid-cols-1
-      md:grid-cols-2
+      :grid-cols-2
       lg:grid-cols-3
       sm:grid-cols-2
     "
@@ -25,6 +25,27 @@
           <p class="font-bold" style="font-family: 'Yaldevi', sans-serif">
             {{ dts.produits[0].name }}
           </p>
+          <div class="flex items-center">
+            <i
+              :class="`fa fa-star mx-1 text-yellow-500
+              hover:text-gray-400
+              `"
+              aria-hidden="true"
+            ></i>
+            <i
+              :class="`fa fa-star mx-1 text-yellow-500
+              hover:text-gray-400
+              `"
+              aria-hidden="true"
+            ></i>
+            <i
+              :class="`fa fa-star mx-1 text-yellow-500
+              hover:text-gray-400
+              `"
+              aria-hidden="true"
+            ></i>
+          </div>
+
           <p
             class="text-red-700 text-sm underline font-semibold"
             style="font-family: 'Yaldevi', sans-serif"

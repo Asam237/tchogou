@@ -1,5 +1,5 @@
 <template>
-  <footer class="site__footer px-2 md:px-0 py-2 md:py-4">
+  <footer class="site__footer px-2 md:px-0 py-5 md:py-10">
     <div class="container mx-auto">
       <div
         class="

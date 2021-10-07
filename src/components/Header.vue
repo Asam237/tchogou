@@ -40,7 +40,7 @@
           "
           style="border-width: 2px; font-family: 'Yaldevi', sans-serif"
         >
-          <input type="text" :placeholder="placeHolder" />
+          <input type="text" class="w-10/12" :placeholder="placeHolder" />
           <i :class="`${faws.icon} text-gray-800`" aria-hidden="true"></i>
           <!-- <div style="width: 10px" class="h-full w-1 bg-gray-800" /> -->
         </div>

@@ -21,6 +21,29 @@
           class="w-full bg-cover h-52"
           :src="dts.produits[0]['medias'][0].link"
         />
+        <div
+          class="
+            mt-2
+            shadow-2xl
+            mx-auto
+            rounded-3xl
+            flex
+            justify-center
+            items-center
+            w-1/2
+            h-8
+          "
+          style="border-width: 1px"
+        >
+          <ul v-for="like in likes" v-bind:key="like.id">
+            <i
+              :class="`${like.icon} px-2 text-gray-800
+              hover:text-gray-400
+              `"
+              aria-hidden="true"
+            ></i>
+          </ul>
+        </div>
         <div class="flex justify-between pt-2">
           <p class="font-bold" style="font-family: 'Yaldevi', sans-serif">
             {{ dts.produits[0].name }}
@@ -77,6 +100,10 @@ export default {
     return {
       myAPI: [],
       loadingPic: require("../assets/imgs/loading.gif"),
+      likes: [
+        { id: "0", icon: "fa fa-shopping-cart" },
+        { id: "1", icon: "fa fa-heart" },
+      ],
     };
   },
   async created() {
